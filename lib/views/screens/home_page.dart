@@ -26,6 +26,15 @@ class HomePage extends StatelessWidget {
             ElevatedButton.icon(
               onPressed: () {
                 Get.changeThemeMode(
+                  Get.isDarkMode ? ThemeMode.light : ThemeMode.dark,
+                );
+              },
+              icon: const Icon(Icons.brightness_5_rounded),
+              label: const Text("Light"),
+            ),
+            ElevatedButton.icon(
+              onPressed: () {
+                Get.changeThemeMode(
                   ThemeMode.light,
                 );
               },
