@@ -1,13 +1,32 @@
 import 'package:get/get.dart';
+import 'package:getx_counter_app/modals/counter_modal.dart';
 
 class CounterController extends GetxController {
-  var count = 0.obs;
-  increment() => count++;
-  decrement() {
-    if (count > 0) {
-      count--;
+  final CounterModal _counterModal = CounterModal();
+
+  get getCounter {
+    return _counterModal.count.value;
+  }
+
+  void increment() {
+    _counterModal.count.value++;
+  }
+
+  void decrement() {
+    if (_counterModal.count.value > 0) {
+      _counterModal.count.value--;
     } else {
-      count;
+      _counterModal.count.value;
     }
+  }
+
+  void multiply() {
+    _counterModal.count.value =
+        _counterModal.count.value * _counterModal.count.value;
+  }
+
+  void divide() {
+    _counterModal.count.value =
+        (_counterModal.count.value / _counterModal.count.value) as int;
   }
 }
