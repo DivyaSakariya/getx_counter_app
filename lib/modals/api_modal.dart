@@ -1,4 +1,4 @@
-class ApiModal {
+class ProductModal {
   final String title;
   final String description;
   final int price;
@@ -10,7 +10,7 @@ class ApiModal {
   final String thumbnail;
   final List images;
 
-  ApiModal({
+  ProductModal({
     required this.title,
     required this.description,
     required this.price,
@@ -23,8 +23,8 @@ class ApiModal {
     required this.images,
   });
 
-  factory ApiModal.fromMap({required Map data}) {
-    return ApiModal(
+  factory ProductModal.fromMap({required Map data}) {
+    return ProductModal(
       title: data['title'],
       description: data['description'],
       price: data['price'],
