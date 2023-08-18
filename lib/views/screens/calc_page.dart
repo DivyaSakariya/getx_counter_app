@@ -12,12 +12,12 @@ class CalcPage extends StatelessWidget {
         centerTitle: true,
         leading: myBackBtn(),
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(18),
+      body: Padding(
+        padding: const EdgeInsets.all(18),
         child: Column(
           children: [
             Row(
-              children: [
+              children:  const [
                 Expanded(
                   child: TextField(
                     decoration: InputDecoration(
