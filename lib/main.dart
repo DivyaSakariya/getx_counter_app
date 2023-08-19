@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_counter_app/views/screens/counter_page.dart';
-import 'package:getx_counter_app/views/screens/ecom_home_page.dart';
 import 'package:getx_counter_app/views/screens/home_page.dart';
 
 void main() {
@@ -30,10 +29,6 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/counter_page',
           page: () => const CounterPage(),
-        ),
-        GetPage(
-          name: '/ecom_home_page',
-          page: () => const EcomHomePage(),
         ),
       ],
     );

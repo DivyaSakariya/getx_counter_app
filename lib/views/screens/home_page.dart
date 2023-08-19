@@ -18,14 +18,6 @@ class HomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () {
                 Get.toNamed(
-                  '/ecom_home_page',
-                );
-              },
-              child: const Text("Ecom Home Page"),
-            ),
-            ElevatedButton(
-              onPressed: () {
-                Get.toNamed(
                   '/calc_page',
                 );
               },
